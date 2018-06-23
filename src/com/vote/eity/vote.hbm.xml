@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.vote.eity">
+        <class name="vote" table="vote">
+       <id name="id">
+             <generator class="identity"></generator>
+            </id>
+            <property name="user_id"></property>
+            <property name="vote_id"></property>
+            <property name="option_id"></property>
+            <property name="lasttime"></property>
+            <property name="IP"></property>
+            <property name="votepalace"></property>
+       </class>     
+</hibernate-mapping>

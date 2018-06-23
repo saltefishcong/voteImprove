@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"  
+    "http://struts.apache.org/dtds/struts-2.3.dtd">  
+      
+<struts>  
+   <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+    <!--  创建投票 -->
+    <package name="com.CreateVote.struts2" extends="json-default" namespace="/">     
+          <action name="Votingexecuted" class="com.vote.struts2.VotingAction"  >
+          <result  name="jsonobject2" type="json">
+          <param name="excludeProperties">  
+                    id,username,votetitle,voteOption,endvoteDate,votecontent ,IP,choosetype,place,position,userentry  
+                    <!-- 剔除的变量名字全部小写 -->
+                </param>
+          </result>        
+          </action>
+    </package>      
+</struts> 

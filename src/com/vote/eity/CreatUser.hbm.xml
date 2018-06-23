@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.vote.eity">
+        <class name="CreatUser" table="CreatUser">
+       <id name="vote_id">
+             <generator class="identity"></generator>
+            </id>
+            <property name="userid"></property>
+            <property name="Votetitle"></property>
+            <property name="Votecontent"></property>
+            <property name="CreatvoteDate"></property>
+            <property name="EndvoteDate"></property>
+            <property name="votepalace"></property>
+            <property name="choosetype"></property>
+       </class>
+       
+
+</hibernate-mapping>
+
+
